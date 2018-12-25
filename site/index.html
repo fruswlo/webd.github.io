@@ -2,12 +2,64 @@
 <html>
 	<head>
 		<title>Hello World</title>
+		<style>
+		p {
+			color: blue;
+			font-size: 20px;
+  			width: 1200px;
+  		}
+
+  		h1 {
+  			color: red;
+  			font-size: 36px;
+  			text-align: center;
+		}
+
+		/* all h2 elements */
+		h2 {
+		  color: orange;
+		  text-align: right;
+		}
+
+		/* all with class="highlight" */
+		.highlight {
+		  font-size: 20px;
+		  font-weight: bold;
+		  font-style: italic;
+		  background-color: green;
+		  opacity: .6;
+		}
+
+		/* element with id="mainPoint" */
+		#mainPoint {
+		  font-size: 24px;
+		  font-weight: bold;
+		  background-color: red;
+		  opacity: .7;
+		}
+
+		/* all p AND h1 elements
+		p, h1 {
+		  color: blue;
+		  text-align: center;
+		}*/
+
+		/* all with class="highlight" */
+		.lecture14 {
+  			background-color: yellow;
+		}
+
+		/* all p elements with class="highlight" */
+		p.lecture14 {  
+  			font-style: italic;
+		}
+		</style>
 	</head>
 	<body>
 		<h1 style="color: red; font-size: 30px; text-align:left;">Note: this page is from webd.github.io/site/index.html</h1>
 		<h1 style="color: green; font-size: 60px; text-align: center;">webd.github.jp</h1>
 
-		<h1>Hello World! First problem was solved</h1>
+		<h1 id="top">Hello World! First problem was solved</h1>
 
 		<h1>This is about Unordered and Ordered HTML List</h1>
 		<div>
@@ -54,14 +106,89 @@
     		</a>
   		</section>
 
+  		<h1 id="top">External Links</h1>
+  		<section>
+    		<p>Let's link to a Facebook Fan page I created for this course!
+				<!-- link to Facebook page WITH TARGET-->
+	      		<a href="https://video.unext.jp//" target="_blank" title="Like Our Page!">
+	      			<div>U-Next Premium Video</div>
+	      		</a>
+	      	</p>
+  		</section>
+
+  		<h1>Links to Sections of The Same Page</h1>
+  		<section>
+	    	<ul>
+	    		<!-- Link to every section in the page -->
+		      	<li><a href="#section1">#section1</a></li>
+		      	<li><a href="#section2">#section2</a></li>
+		      	<li><a href="#section3">#section3</a></li>
+		      	<li><a href="#section4">#section4</a></li>
+		      	<li><a href="#section5">#section5</a></li>
+		      	<li><a href="#section6">#section6</a></li>
+		    </ul>
+		</section>
 
 
+	<section id="section1">
+	  	<h3>(#section1) Section 1</h3>
+	  	<p>This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location</p>
+  	</section>
+	<section id="section2">
+		<h3>(#section2) Section 2</h3>
+		<p>This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location</p>
+	</section>
+	<section id="section3">
+		<h3>(#section3) Section 3</h3>
+		<p>This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location</p>
+	</section>
+	<section id="section4">
+		<h3>(#section4) Section 4</h3>
+  		<p>This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location</p>
+	</section>
+  	<section id="section5">
+    	<h3>(#section5) Section 5</h3>
+    	<p>This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location. This is simply an example paragraph. In real books, web page there might be a long contents, lines. Our most important matter is, when someone is clicking on SECTION1 from the top, it should point to this location</p>
+    </section>
+    <div>
+    	<h2><a name="section6">(#section6) Section 6</a></h2>
+    	<p>Back to top: <a href="#top">Back to Top</a></p>
+  	</div>
+
+  	<h1>This is an IMG example</h1>
+  	<p>
+  		<img src="picture-with-quote.jpg" width="250" height="200" alt="Picture with a quote"><div> &quot;This is the picture with a quote.&quot;</div>
+  	</p>
+	<p>
+		<img src="https://www.w3schools.com/images/w3schools_green.jpg" width="250" height="200">
+	</p>
+
+	<h1>Simple Selectors (h1)</h1>
+	<h2>Subheading 1 (h2)</h2>
+
+	<p class="highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?</p>
+	
+	<p class="highlight">Paragraph with attribute class="highlight". Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	
+	<h2>Subheading 2 (h2)</h2>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo ipsum dolores vel modi magnam veniam alias at nam. Voluptatem officiis dolor dolorem aspernatur dolorum modi ipsa, nobis animi aut!</p>
+	<div>This is the main point of the entire article. So, attribute 
+		<span id="mainPoint">id="mainPoint".</span> 
+	</div>
+
+	<h1 class="lecture14">Element with Class Selector</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?</p>
+	<p class="lecture14">This is P with CLASS="highlight"</p>
+	<div class="mainpoint lecture14">This is the main point of the entire article.
+	</div>
 
  		<footer>
  			<h1>Browser-Sync also integrated</h1>>
  			<hr>
       			<p style="text-align: center;" onclick="alert('EMAILING US IS USELESS');">Tech Support: gitTest@webdev.com
-      			</p>      			
+      			</p>
+      			<p>Theodore Roosevelt 1910 &copy; Copyright</p>
     	</footer>
 	</body>
 </html>
