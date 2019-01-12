@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title>Hello World</title>
+		<!-- Declare of external css style file-->
+		<link rel="stylesheet" href="style.css">
 		<style>
 		p {
 			color: blue;
@@ -19,6 +21,12 @@
 		h2 {
 		  color: orange;
 		  text-align: right;
+		}
+
+		/* all h3 elements */
+		h3 {
+		  color: blue;
+		  text-align: center;
 		}
 
 		/* all with class="highlight" */
@@ -53,6 +61,54 @@
 		p.lecture14 {  
   			font-style: italic;
 		}
+
+		/* all elements with class 'highlight' as well as with class 'mainpoint'. */
+		.lecture14.mainpoint {
+  			color: red;
+  			background-color: black;
+		}
+
+		.pseudo li {
+  			list-style: none;
+		}
+
+		/* give a look of all li as like BUTTONs */
+		/*target selector:pseudo class*/
+		.pseudo a:link, .pseudo a:visited{
+			text-decoration: none;
+			background-color: white;
+			border: 1px solid blue;
+			color: black;
+			display: block;
+			width: 300px;
+			text-align: center;
+			margin-bottom: 3px;			
+		}
+
+		/* when hovering mouse on that elemnt, active display change */
+		.pseudo a:hover, .pseudo a:active{
+			background-color: yellow;
+			color: red;
+		}
+
+		/* it is also possible to style any specific child by array no */
+		.pseudo li:nth-child(3){
+			font-size: 25px;
+		}
+
+		/* since section has used in several place in HTML code, so i have put a unique #id */
+		#pseudo div:nth-child(even){
+			background-color: magenta;
+		}
+
+		/* to set hover style to any nth child, then */
+		#pseudo div:nth-child(5):hover{
+			background-color: green;
+			cursor: pointer;
+		}
+
+
+
 		</style>
 	</head>
 	<body>
@@ -182,6 +238,47 @@
 	<p class="lecture14">This is P with CLASS="highlight"</p>
 	<div class="mainpoint lecture14">This is the main point of the entire article.
 	</div>
+
+	<h3>Very interesting CSS selector:pseudo selector</h3>
+	<div class="pseudo">
+		<ul>
+    		<li><a href="/">Home</a></li>
+    		<li><a href="http://goo.gl/V0Wl6s" target="_blank">AngularJS Course</a></li>
+    		<li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page</a></li>
+  		</ul>
+	</div>
+
+	<section id="pseudo">		
+		<div>DIV 1</div>
+  		<div>DIV 2</div>
+	  	<div>DIV 3</div>
+	  	<div>DIV 4</div>
+	  	<div>DIV 5</div>
+	  	<div>DIV 6</div>
+	  	<div>DIV 7</div>
+	  	<div>DIV 8</div>
+	  	<div>DIV 9</div>
+	  	<div>DIV 10</div>
+	  	<div>DIV 11</div>
+	  	<div>DIV 12</div>
+	  	<div>DIV 13</div>
+	  	<div>DIV 14</div>
+	  	<div>DIV 15</div>
+	  	<div>DIV 16</div>
+	  	<div>DIV 17</div>
+	  	<div>DIV 18</div>
+	  	<div>DIV 19</div>
+	  	<div>DIV 20</div>
+	</section>
+
+	<p class="txtstyle1">You can get commonly used font combinations from 
+		<a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">http://www.w3schools.com/cssref/css_websafe_fonts.asp
+		</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quod necessitatibus a ullam dolorum amet reprehenderit sit laudantium reiciendis aperiam.
+	</p>
+	<p class="txtstyle2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam fugiat repudiandae fugit porro commodi.</p>
+
+	<div>Hello</div>
+  	<span>World!</span>
 
  		<footer>
  			<h1>Browser-Sync also integrated</h1>>
